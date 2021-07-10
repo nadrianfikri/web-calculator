@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 30px;
+  margin-top: 10px;
+}
+
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+
+  padding: 20px;
+  margin: 0 auto;
+  background-color: black;
+  text-align: right;
+}
+
+.display {
+  color: white;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+.flex-container-row {
+  display: flex;
+
+  background-color: black;
+}
+.button {
+  flex-basis: 25%;
+
+  color: white;
+  font-size: 40px;
+  padding: 20px;
+
+  text-align: center;
+  border: 1px solid black;
+  background: #242424;
+  cursor: pointer;
+
+  border: 2px solid black;
+  border-radius: 50%;
+}
+.button:hover {
+  background: salmon;
+  transition: 0.3s;
+}
+
+.operator {
+  background: orange;
+}
+.equals {
+  background: orange;
+}
+.double {
+  flex-basis: 50%;
+  border-radius: 70px;
+}
+.first-line {
+  color: black;
+  background: lightgray;
+}
+
+.history {
+  width: 50%;
+  margin: 30px auto 0 auto;
+  overflow: scroll;
+}
+table {
+  width: 100%;
+  border: 1px solid #d3d3d3;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+th,
+td {
+  text-align: center;
+  padding: 16px;
+}
+th {
+  background-color: orange;
+  color: white;
+}
+tr:nth-child(even) {
+  background-color: #d2d2d2;
+}
+
+@media screen and (max-width: 513px) {
+  .button {
+    padding: 20px;
+  }
+  .history {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 410px) {
+  .button {
+    padding: 15px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .button {
+    font-size: 30px;
+    padding: 13px;
+  }
+}
+@media screen and (max-width: 314px) {
+  .button {
+    font-size: 20px;
+    padding: 13px;
+  }
+}
